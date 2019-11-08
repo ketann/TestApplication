@@ -1,24 +1,21 @@
-package com.example.testapplication;
+package com.example.testapplication.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.res.AssetFileDescriptor;
-import android.content.res.AssetManager;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import java.io.File;
-import java.io.FileInputStream;
+import com.example.testapplication.R;
+
 import java.io.IOException;
 
 public class AudioPlayFromUrl extends AppCompatActivity implements View.OnClickListener {
     private String TAG = "AudioPlayFromUrl";
-    //String AudioURL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-    String AudioURL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3";
+    String AudioURL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+    //String AudioURL = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3";
     MediaPlayer mediaplayer;
     private Button btnAudioPlayFromUrl, btnAudioStop;
 
